@@ -1,0 +1,8 @@
+<html><body style="background:#333;font-family:sans-serif">
+<h2 style="color:#fff">Angry stick figure variants (model=flux)</h2>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+$files = Get-ChildItem angry_*.jpg
+foreach($f in $files){
+ "<div><img src='$($f.Name)' width='300'><div style='color:#ccc;text-align:center'>$($f.Name)</div></div>"
+}
+</div></body></html>
